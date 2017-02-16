@@ -15,7 +15,6 @@
 		130A4F281E55A6EA0078993B /* LDGestureLockIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 130A4F1E1E55A6EA0078993B /* LDGestureLockIndicator.m */; };
 		130A4F291E55A6EA0078993B /* LDGestureLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 130A4F201E55A6EA0078993B /* LDGestureLockView.m */; };
 		130A4F2A1E55A6EA0078993B /* LDGestureLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 130A4F221E55A6EA0078993B /* LDGestureLockViewController.m */; };
-		13F6C5751E49737B009F751A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F6C5741E49737B009F751A /* main.m */; };
 		13F6C57E1E49737B009F751A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F6C57C1E49737B009F751A /* Main.storyboard */; };
 		13F6C5801E49737B009F751A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13F6C57F1E49737B009F751A /* Assets.xcassets */; };
 		13F6C5831E49737B009F751A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F6C5811E49737B009F751A /* LaunchScreen.storyboard */; };
@@ -55,7 +54,6 @@
 		130A4F211E55A6EA0078993B /* LDGestureLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDGestureLockViewController.h; sourceTree = "<group>"; };
 		130A4F221E55A6EA0078993B /* LDGestureLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDGestureLockViewController.m; sourceTree = "<group>"; };
 		13F6C5701E49737B009F751A /* GestureLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GestureLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13F6C5741E49737B009F751A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		13F6C57D1E49737B009F751A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13F6C57F1E49737B009F751A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13F6C5821E49737B009F751A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 		13F6C5731E49737B009F751A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				13F6C5741E49737B009F751A /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -376,7 +373,6 @@
 			files = (
 				130A4F281E55A6EA0078993B /* LDGestureLockIndicator.m in Sources */,
 				130A4F291E55A6EA0078993B /* LDGestureLockView.m in Sources */,
-				13F6C5751E49737B009F751A /* main.m in Sources */,
 				130A4F2A1E55A6EA0078993B /* LDGestureLockViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
