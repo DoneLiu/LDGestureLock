@@ -28,6 +28,9 @@ typedef NS_ENUM(NSInteger, LDGestureLockType) {
 
 @interface LDGestureLockViewController : UIViewController
 
+@property (nonatomic, copy) NSString *username;
+@property (nonatomic, copy) UIImage *userHeadIcon;
+
 @property (nonatomic, assign) id<LDGestureLockViewControllerDelegate> delegate;
 
 - (instancetype)initWithGestureLockType:(LDGestureLockType)gestureLockType;

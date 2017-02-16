@@ -36,8 +36,8 @@ static NSInteger BUTTON_TAG = 1000;
     for (NSInteger i = 0; i < 9; i++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         btn.userInteractionEnabled = NO;
-        [btn setImage:[UIImage imageNamed:@"gesture_normal"] forState:UIControlStateNormal];
-        [btn setImage:[UIImage imageNamed:@"gesture_selected"] forState:UIControlStateSelected];
+        [btn setImage:[UIImage imageNamed:@"ld_gesture_normal"] forState:UIControlStateNormal];
+        [btn setImage:[UIImage imageNamed:@"ld_gesture_selected"] forState:UIControlStateSelected];
         btn.tag = BUTTON_TAG + i;
         [self addSubview:btn];
     }

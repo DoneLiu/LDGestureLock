@@ -50,6 +50,7 @@
 
 - (void)validate {
     LDGestureLockViewController *vc = [[LDGestureLockViewController alloc] initWithGestureLockType:LDGestureLockTypeValidatePassword];
+    vc.username = @"Done.Liu";
     vc.delegate = self;
     [self presentViewController:vc animated:YES completion:nil];
 }

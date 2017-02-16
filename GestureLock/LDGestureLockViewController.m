@@ -12,7 +12,6 @@
 #import "LDGestureLockIndicator.h"
 
 #import "Masonry.h"
-#import "MMPlaceHolder.h"
 
 static NSString *GESTURE_LOCK_PASSWORD = @"ld_gesture_lock_password";
 
@@ -94,8 +93,8 @@ static CGFloat GESTURE_LOCK_VIEW_SCALE;
         [self.view addSubview:_status];
         
         [_status mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerX.mas_equalTo(_userName);
-            make.top.mas_equalTo(_userName.mas_bottom);
+            make.centerX.mas_equalTo(self.username ? _userName : _userAvatar);
+            make.top.mas_equalTo(self.username ? _userName.mas_bottom : _userAvatar.mas_bottom);
             make.width.mas_equalTo(self.view);
             make.height.mas_equalTo(@(24));
         }];
@@ -164,7 +163,7 @@ static CGFloat GESTURE_LOCK_VIEW_SCALE;
 - (UIImageView *)userAvatar {
     if (!_userAvatar) {
         _userAvatar = [[UIImageView alloc] init];
-        _userAvatar.image = [UIImage imageNamed:@"gesture_headIcon"];
+        _userAvatar.image = _userHeadIcon ? _userHeadIcon : [UIImage imageNamed:@"ld_gesture_headIcon"];
         [self.view addSubview:_userAvatar];
         
         [_userAvatar mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -216,7 +215,6 @@ static CGFloat GESTURE_LOCK_VIEW_SCALE;
         case LDGestureLockTypeCreatePassword: {
             self.gestureLockIndicator.hidden = NO;
             self.userAvatar.hidden = YES;
-            self.userName.hidden = YES;
             self.status.text = @"请绘制手势密码";
             self.otherAccountLogin.hidden = YES;
             self.forgetGesturePassword.hidden = YES;
@@ -226,8 +224,11 @@ static CGFloat GESTURE_LOCK_VIEW_SCALE;
         case LDGestureLockTypeValidatePassword: {
             self.gestureLockIndicator.hidden = YES;
             self.userAvatar.hidden = NO;
-            self.userName.hidden = NO;
-            self.userName.text = @"Done.Liu";
+            
+            if (self.username) {
+                self.userName.hidden = NO;
+                self.userName.text = self.username;
+            }
             self.status.text = @"请输入手势密码";
             self.otherAccountLogin.hidden = NO;
             self.forgetGesturePassword.hidden = NO;
