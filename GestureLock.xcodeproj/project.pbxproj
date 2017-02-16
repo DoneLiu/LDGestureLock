@@ -110,6 +110,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		130A4EF11E55A14D0078993B /* LD_GestureLock */ = {
+			isa = PBXGroup;
+			children = (
+				13F6C5A71E49741B009F751A /* LDGestureLockIndicator.h */,
+				13F6C5A81E49741B009F751A /* LDGestureLockIndicator.m */,
+				13F6C5AA1E497532009F751A /* LDGestureLockView.h */,
+				13F6C5AB1E497532009F751A /* LDGestureLockView.m */,
+				13F6C5AD1E49754D009F751A /* LDGestureLockViewController.h */,
+				13F6C5AE1E49754D009F751A /* LDGestureLockViewController.m */,
+			);
+			name = LD_GestureLock;
+			sourceTree = "<group>";
+		};
 		13F6C5671E49737A009F751A = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +148,7 @@
 		13F6C5721E49737B009F751A /* GestureLock */ = {
 			isa = PBXGroup;
 			children = (
+				130A4EF11E55A14D0078993B /* LD_GestureLock */,
 				13F6C5A61E4973C3009F751A /* resources */,
 				13F6C5761E49737B009F751A /* AppDelegate.h */,
 				13F6C5771E49737B009F751A /* AppDelegate.m */,
@@ -145,12 +159,6 @@
 				13F6C5811E49737B009F751A /* LaunchScreen.storyboard */,
 				13F6C5841E49737B009F751A /* Info.plist */,
 				13F6C5731E49737B009F751A /* Supporting Files */,
-				13F6C5A71E49741B009F751A /* LDGestureLockIndicator.h */,
-				13F6C5A81E49741B009F751A /* LDGestureLockIndicator.m */,
-				13F6C5AA1E497532009F751A /* LDGestureLockView.h */,
-				13F6C5AB1E497532009F751A /* LDGestureLockView.m */,
-				13F6C5AD1E49754D009F751A /* LDGestureLockViewController.h */,
-				13F6C5AE1E49754D009F751A /* LDGestureLockViewController.m */,
 			);
 			path = GestureLock;
 			sourceTree = "<group>";
