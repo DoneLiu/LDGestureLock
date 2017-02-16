@@ -12,9 +12,12 @@
 		130A4F251E55A6EA0078993B /* ld_gesture_indicator_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 130A4F1A1E55A6EA0078993B /* ld_gesture_indicator_selected@2x.png */; };
 		130A4F261E55A6EA0078993B /* ld_gesture_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 130A4F1B1E55A6EA0078993B /* ld_gesture_normal@2x.png */; };
 		130A4F271E55A6EA0078993B /* ld_gesture_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 130A4F1C1E55A6EA0078993B /* ld_gesture_selected@2x.png */; };
-		130A4F281E55A6EA0078993B /* LDGestureLockIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 130A4F1E1E55A6EA0078993B /* LDGestureLockIndicator.m */; };
-		130A4F291E55A6EA0078993B /* LDGestureLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 130A4F201E55A6EA0078993B /* LDGestureLockView.m */; };
-		130A4F2A1E55A6EA0078993B /* LDGestureLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 130A4F221E55A6EA0078993B /* LDGestureLockViewController.m */; };
+		130A4F2D1E55A9580078993B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 130A4F2C1E55A9580078993B /* main.m */; };
+		130A4F351E55A96E0078993B /* LDGestureLockIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 130A4F301E55A96E0078993B /* LDGestureLockIndicator.m */; };
+		130A4F361E55A96E0078993B /* LDGestureLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 130A4F321E55A96E0078993B /* LDGestureLockView.m */; };
+		130A4F371E55A96E0078993B /* LDGestureLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 130A4F341E55A96E0078993B /* LDGestureLockViewController.m */; };
+		130A4F3C1E55A9930078993B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 130A4F391E55A9930078993B /* AppDelegate.m */; };
+		130A4F3D1E55A9930078993B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 130A4F3B1E55A9930078993B /* ViewController.m */; };
 		13F6C57E1E49737B009F751A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F6C57C1E49737B009F751A /* Main.storyboard */; };
 		13F6C5801E49737B009F751A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13F6C57F1E49737B009F751A /* Assets.xcassets */; };
 		13F6C5831E49737B009F751A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F6C5811E49737B009F751A /* LaunchScreen.storyboard */; };
@@ -47,12 +50,17 @@
 		130A4F1A1E55A6EA0078993B /* ld_gesture_indicator_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ld_gesture_indicator_selected@2x.png"; sourceTree = "<group>"; };
 		130A4F1B1E55A6EA0078993B /* ld_gesture_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ld_gesture_normal@2x.png"; sourceTree = "<group>"; };
 		130A4F1C1E55A6EA0078993B /* ld_gesture_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ld_gesture_selected@2x.png"; sourceTree = "<group>"; };
-		130A4F1D1E55A6EA0078993B /* LDGestureLockIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDGestureLockIndicator.h; sourceTree = "<group>"; };
-		130A4F1E1E55A6EA0078993B /* LDGestureLockIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDGestureLockIndicator.m; sourceTree = "<group>"; };
-		130A4F1F1E55A6EA0078993B /* LDGestureLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDGestureLockView.h; sourceTree = "<group>"; };
-		130A4F201E55A6EA0078993B /* LDGestureLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDGestureLockView.m; sourceTree = "<group>"; };
-		130A4F211E55A6EA0078993B /* LDGestureLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDGestureLockViewController.h; sourceTree = "<group>"; };
-		130A4F221E55A6EA0078993B /* LDGestureLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDGestureLockViewController.m; sourceTree = "<group>"; };
+		130A4F2C1E55A9580078993B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		130A4F2F1E55A96E0078993B /* LDGestureLockIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDGestureLockIndicator.h; sourceTree = "<group>"; };
+		130A4F301E55A96E0078993B /* LDGestureLockIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDGestureLockIndicator.m; sourceTree = "<group>"; };
+		130A4F311E55A96E0078993B /* LDGestureLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDGestureLockView.h; sourceTree = "<group>"; };
+		130A4F321E55A96E0078993B /* LDGestureLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDGestureLockView.m; sourceTree = "<group>"; };
+		130A4F331E55A96E0078993B /* LDGestureLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDGestureLockViewController.h; sourceTree = "<group>"; };
+		130A4F341E55A96E0078993B /* LDGestureLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDGestureLockViewController.m; sourceTree = "<group>"; };
+		130A4F381E55A9930078993B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		130A4F391E55A9930078993B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		130A4F3A1E55A9930078993B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		130A4F3B1E55A9930078993B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		13F6C5701E49737B009F751A /* GestureLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GestureLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13F6C57D1E49737B009F751A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13F6C57F1E49737B009F751A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,6 +110,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		130A4F2B1E55A8FC0078993B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				130A4F181E55A6EA0078993B /* ld_gesture_headIcon@2x.png */,
+				130A4F191E55A6EA0078993B /* ld_gesture_indicator_normal@2x.png */,
+				130A4F1A1E55A6EA0078993B /* ld_gesture_indicator_selected@2x.png */,
+				130A4F1B1E55A6EA0078993B /* ld_gesture_normal@2x.png */,
+				130A4F1C1E55A6EA0078993B /* ld_gesture_selected@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		130A4F2E1E55A96E0078993B /* LD_GestureLock */ = {
+			isa = PBXGroup;
+			children = (
+				130A4F2F1E55A96E0078993B /* LDGestureLockIndicator.h */,
+				130A4F301E55A96E0078993B /* LDGestureLockIndicator.m */,
+				130A4F311E55A96E0078993B /* LDGestureLockView.h */,
+				130A4F321E55A96E0078993B /* LDGestureLockView.m */,
+				130A4F331E55A96E0078993B /* LDGestureLockViewController.h */,
+				130A4F341E55A96E0078993B /* LDGestureLockViewController.m */,
+			);
+			path = LD_GestureLock;
+			sourceTree = "<group>";
+		};
 		13F6C5671E49737A009F751A = {
 			isa = PBXGroup;
 			children = (
@@ -127,21 +160,16 @@
 		13F6C5721E49737B009F751A /* GestureLock */ = {
 			isa = PBXGroup;
 			children = (
-				130A4F181E55A6EA0078993B /* ld_gesture_headIcon@2x.png */,
-				130A4F191E55A6EA0078993B /* ld_gesture_indicator_normal@2x.png */,
-				130A4F1A1E55A6EA0078993B /* ld_gesture_indicator_selected@2x.png */,
-				130A4F1B1E55A6EA0078993B /* ld_gesture_normal@2x.png */,
-				130A4F1C1E55A6EA0078993B /* ld_gesture_selected@2x.png */,
-				130A4F1D1E55A6EA0078993B /* LDGestureLockIndicator.h */,
-				130A4F1E1E55A6EA0078993B /* LDGestureLockIndicator.m */,
-				130A4F1F1E55A6EA0078993B /* LDGestureLockView.h */,
-				130A4F201E55A6EA0078993B /* LDGestureLockView.m */,
-				130A4F211E55A6EA0078993B /* LDGestureLockViewController.h */,
-				130A4F221E55A6EA0078993B /* LDGestureLockViewController.m */,
-				13F6C57C1E49737B009F751A /* Main.storyboard */,
+				130A4F381E55A9930078993B /* AppDelegate.h */,
+				130A4F391E55A9930078993B /* AppDelegate.m */,
+				130A4F3A1E55A9930078993B /* ViewController.h */,
+				130A4F3B1E55A9930078993B /* ViewController.m */,
+				130A4F2E1E55A96E0078993B /* LD_GestureLock */,
+				130A4F2B1E55A8FC0078993B /* Resources */,
 				13F6C57F1E49737B009F751A /* Assets.xcassets */,
-				13F6C5811E49737B009F751A /* LaunchScreen.storyboard */,
 				13F6C5841E49737B009F751A /* Info.plist */,
+				13F6C5811E49737B009F751A /* LaunchScreen.storyboard */,
+				13F6C57C1E49737B009F751A /* Main.storyboard */,
 				13F6C5731E49737B009F751A /* Supporting Files */,
 			);
 			path = GestureLock;
@@ -150,6 +178,7 @@
 		13F6C5731E49737B009F751A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				130A4F2C1E55A9580078993B /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -371,9 +400,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				130A4F281E55A6EA0078993B /* LDGestureLockIndicator.m in Sources */,
-				130A4F291E55A6EA0078993B /* LDGestureLockView.m in Sources */,
-				130A4F2A1E55A6EA0078993B /* LDGestureLockViewController.m in Sources */,
+				130A4F3D1E55A9930078993B /* ViewController.m in Sources */,
+				130A4F351E55A96E0078993B /* LDGestureLockIndicator.m in Sources */,
+				130A4F361E55A96E0078993B /* LDGestureLockView.m in Sources */,
+				130A4F2D1E55A9580078993B /* main.m in Sources */,
+				130A4F371E55A96E0078993B /* LDGestureLockViewController.m in Sources */,
+				130A4F3C1E55A9930078993B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

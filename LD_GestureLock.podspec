@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LD_GestureLock"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "A gesture lock view"
 
   # This description is used to generate tags and improve search results.
