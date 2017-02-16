@@ -7,17 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		130A4F0B1E55A5E20078993B /* LDGestureLockIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 130A4F061E55A5E20078993B /* LDGestureLockIndicator.m */; };
-		130A4F0C1E55A5E20078993B /* LDGestureLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 130A4F081E55A5E20078993B /* LDGestureLockView.m */; };
-		130A4F0D1E55A5E20078993B /* LDGestureLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 130A4F0A1E55A5E20078993B /* LDGestureLockViewController.m */; };
-		130A4F131E55A5EC0078993B /* ld_gesture_headIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 130A4F0E1E55A5EC0078993B /* ld_gesture_headIcon@2x.png */; };
-		130A4F141E55A5EC0078993B /* ld_gesture_indicator_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 130A4F0F1E55A5EC0078993B /* ld_gesture_indicator_normal@2x.png */; };
-		130A4F151E55A5EC0078993B /* ld_gesture_indicator_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 130A4F101E55A5EC0078993B /* ld_gesture_indicator_selected@2x.png */; };
-		130A4F161E55A5EC0078993B /* ld_gesture_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 130A4F111E55A5EC0078993B /* ld_gesture_normal@2x.png */; };
-		130A4F171E55A5EC0078993B /* ld_gesture_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 130A4F121E55A5EC0078993B /* ld_gesture_selected@2x.png */; };
+		130A4F231E55A6EA0078993B /* ld_gesture_headIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 130A4F181E55A6EA0078993B /* ld_gesture_headIcon@2x.png */; };
+		130A4F241E55A6EA0078993B /* ld_gesture_indicator_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 130A4F191E55A6EA0078993B /* ld_gesture_indicator_normal@2x.png */; };
+		130A4F251E55A6EA0078993B /* ld_gesture_indicator_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 130A4F1A1E55A6EA0078993B /* ld_gesture_indicator_selected@2x.png */; };
+		130A4F261E55A6EA0078993B /* ld_gesture_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 130A4F1B1E55A6EA0078993B /* ld_gesture_normal@2x.png */; };
+		130A4F271E55A6EA0078993B /* ld_gesture_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 130A4F1C1E55A6EA0078993B /* ld_gesture_selected@2x.png */; };
+		130A4F281E55A6EA0078993B /* LDGestureLockIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 130A4F1E1E55A6EA0078993B /* LDGestureLockIndicator.m */; };
+		130A4F291E55A6EA0078993B /* LDGestureLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 130A4F201E55A6EA0078993B /* LDGestureLockView.m */; };
+		130A4F2A1E55A6EA0078993B /* LDGestureLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 130A4F221E55A6EA0078993B /* LDGestureLockViewController.m */; };
 		13F6C5751E49737B009F751A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F6C5741E49737B009F751A /* main.m */; };
-		13F6C5781E49737B009F751A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F6C5771E49737B009F751A /* AppDelegate.m */; };
-		13F6C57B1E49737B009F751A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F6C57A1E49737B009F751A /* ViewController.m */; };
 		13F6C57E1E49737B009F751A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F6C57C1E49737B009F751A /* Main.storyboard */; };
 		13F6C5801E49737B009F751A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13F6C57F1E49737B009F751A /* Assets.xcassets */; };
 		13F6C5831E49737B009F751A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F6C5811E49737B009F751A /* LaunchScreen.storyboard */; };
@@ -45,23 +43,19 @@
 
 /* Begin PBXFileReference section */
 		09EFB2AA0137CC7DF0EB414B /* Pods-GestureLock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GestureLock.release.xcconfig"; path = "Pods/Target Support Files/Pods-GestureLock/Pods-GestureLock.release.xcconfig"; sourceTree = "<group>"; };
-		130A4F051E55A5E20078993B /* LDGestureLockIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDGestureLockIndicator.h; sourceTree = "<group>"; };
-		130A4F061E55A5E20078993B /* LDGestureLockIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDGestureLockIndicator.m; sourceTree = "<group>"; };
-		130A4F071E55A5E20078993B /* LDGestureLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDGestureLockView.h; sourceTree = "<group>"; };
-		130A4F081E55A5E20078993B /* LDGestureLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDGestureLockView.m; sourceTree = "<group>"; };
-		130A4F091E55A5E20078993B /* LDGestureLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDGestureLockViewController.h; sourceTree = "<group>"; };
-		130A4F0A1E55A5E20078993B /* LDGestureLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDGestureLockViewController.m; sourceTree = "<group>"; };
-		130A4F0E1E55A5EC0078993B /* ld_gesture_headIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ld_gesture_headIcon@2x.png"; sourceTree = "<group>"; };
-		130A4F0F1E55A5EC0078993B /* ld_gesture_indicator_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ld_gesture_indicator_normal@2x.png"; sourceTree = "<group>"; };
-		130A4F101E55A5EC0078993B /* ld_gesture_indicator_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ld_gesture_indicator_selected@2x.png"; sourceTree = "<group>"; };
-		130A4F111E55A5EC0078993B /* ld_gesture_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ld_gesture_normal@2x.png"; sourceTree = "<group>"; };
-		130A4F121E55A5EC0078993B /* ld_gesture_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ld_gesture_selected@2x.png"; sourceTree = "<group>"; };
+		130A4F181E55A6EA0078993B /* ld_gesture_headIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ld_gesture_headIcon@2x.png"; sourceTree = "<group>"; };
+		130A4F191E55A6EA0078993B /* ld_gesture_indicator_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ld_gesture_indicator_normal@2x.png"; sourceTree = "<group>"; };
+		130A4F1A1E55A6EA0078993B /* ld_gesture_indicator_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ld_gesture_indicator_selected@2x.png"; sourceTree = "<group>"; };
+		130A4F1B1E55A6EA0078993B /* ld_gesture_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ld_gesture_normal@2x.png"; sourceTree = "<group>"; };
+		130A4F1C1E55A6EA0078993B /* ld_gesture_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ld_gesture_selected@2x.png"; sourceTree = "<group>"; };
+		130A4F1D1E55A6EA0078993B /* LDGestureLockIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDGestureLockIndicator.h; sourceTree = "<group>"; };
+		130A4F1E1E55A6EA0078993B /* LDGestureLockIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDGestureLockIndicator.m; sourceTree = "<group>"; };
+		130A4F1F1E55A6EA0078993B /* LDGestureLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDGestureLockView.h; sourceTree = "<group>"; };
+		130A4F201E55A6EA0078993B /* LDGestureLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDGestureLockView.m; sourceTree = "<group>"; };
+		130A4F211E55A6EA0078993B /* LDGestureLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDGestureLockViewController.h; sourceTree = "<group>"; };
+		130A4F221E55A6EA0078993B /* LDGestureLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDGestureLockViewController.m; sourceTree = "<group>"; };
 		13F6C5701E49737B009F751A /* GestureLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GestureLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13F6C5741E49737B009F751A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		13F6C5761E49737B009F751A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		13F6C5771E49737B009F751A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		13F6C5791E49737B009F751A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		13F6C57A1E49737B009F751A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		13F6C57D1E49737B009F751A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13F6C57F1E49737B009F751A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13F6C5821E49737B009F751A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -110,19 +104,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		130A4EF11E55A14D0078993B /* LD_GestureLock */ = {
-			isa = PBXGroup;
-			children = (
-				130A4F051E55A5E20078993B /* LDGestureLockIndicator.h */,
-				130A4F061E55A5E20078993B /* LDGestureLockIndicator.m */,
-				130A4F071E55A5E20078993B /* LDGestureLockView.h */,
-				130A4F081E55A5E20078993B /* LDGestureLockView.m */,
-				130A4F091E55A5E20078993B /* LDGestureLockViewController.h */,
-				130A4F0A1E55A5E20078993B /* LDGestureLockViewController.m */,
-			);
-			path = LD_GestureLock;
-			sourceTree = "<group>";
-		};
 		13F6C5671E49737A009F751A = {
 			isa = PBXGroup;
 			children = (
@@ -148,12 +129,17 @@
 		13F6C5721E49737B009F751A /* GestureLock */ = {
 			isa = PBXGroup;
 			children = (
-				130A4EF11E55A14D0078993B /* LD_GestureLock */,
-				13F6C5A61E4973C3009F751A /* resources */,
-				13F6C5761E49737B009F751A /* AppDelegate.h */,
-				13F6C5771E49737B009F751A /* AppDelegate.m */,
-				13F6C5791E49737B009F751A /* ViewController.h */,
-				13F6C57A1E49737B009F751A /* ViewController.m */,
+				130A4F181E55A6EA0078993B /* ld_gesture_headIcon@2x.png */,
+				130A4F191E55A6EA0078993B /* ld_gesture_indicator_normal@2x.png */,
+				130A4F1A1E55A6EA0078993B /* ld_gesture_indicator_selected@2x.png */,
+				130A4F1B1E55A6EA0078993B /* ld_gesture_normal@2x.png */,
+				130A4F1C1E55A6EA0078993B /* ld_gesture_selected@2x.png */,
+				130A4F1D1E55A6EA0078993B /* LDGestureLockIndicator.h */,
+				130A4F1E1E55A6EA0078993B /* LDGestureLockIndicator.m */,
+				130A4F1F1E55A6EA0078993B /* LDGestureLockView.h */,
+				130A4F201E55A6EA0078993B /* LDGestureLockView.m */,
+				130A4F211E55A6EA0078993B /* LDGestureLockViewController.h */,
+				130A4F221E55A6EA0078993B /* LDGestureLockViewController.m */,
 				13F6C57C1E49737B009F751A /* Main.storyboard */,
 				13F6C57F1E49737B009F751A /* Assets.xcassets */,
 				13F6C5811E49737B009F751A /* LaunchScreen.storyboard */,
@@ -187,19 +173,6 @@
 				13F6C59A1E49737B009F751A /* Info.plist */,
 			);
 			path = GestureLockUITests;
-			sourceTree = "<group>";
-		};
-		13F6C5A61E4973C3009F751A /* resources */ = {
-			isa = PBXGroup;
-			children = (
-				130A4F0E1E55A5EC0078993B /* ld_gesture_headIcon@2x.png */,
-				130A4F0F1E55A5EC0078993B /* ld_gesture_indicator_normal@2x.png */,
-				130A4F101E55A5EC0078993B /* ld_gesture_indicator_selected@2x.png */,
-				130A4F111E55A5EC0078993B /* ld_gesture_normal@2x.png */,
-				130A4F121E55A5EC0078993B /* ld_gesture_selected@2x.png */,
-			);
-			name = resources;
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		949B18EF89B8279AABA5E6D9 /* Pods */ = {
@@ -324,11 +297,11 @@
 				13F6C5831E49737B009F751A /* LaunchScreen.storyboard in Resources */,
 				13F6C5801E49737B009F751A /* Assets.xcassets in Resources */,
 				13F6C57E1E49737B009F751A /* Main.storyboard in Resources */,
-				130A4F161E55A5EC0078993B /* ld_gesture_normal@2x.png in Resources */,
-				130A4F141E55A5EC0078993B /* ld_gesture_indicator_normal@2x.png in Resources */,
-				130A4F171E55A5EC0078993B /* ld_gesture_selected@2x.png in Resources */,
-				130A4F131E55A5EC0078993B /* ld_gesture_headIcon@2x.png in Resources */,
-				130A4F151E55A5EC0078993B /* ld_gesture_indicator_selected@2x.png in Resources */,
+				130A4F261E55A6EA0078993B /* ld_gesture_normal@2x.png in Resources */,
+				130A4F241E55A6EA0078993B /* ld_gesture_indicator_normal@2x.png in Resources */,
+				130A4F271E55A6EA0078993B /* ld_gesture_selected@2x.png in Resources */,
+				130A4F231E55A6EA0078993B /* ld_gesture_headIcon@2x.png in Resources */,
+				130A4F251E55A6EA0078993B /* ld_gesture_indicator_selected@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,12 +374,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				130A4F0B1E55A5E20078993B /* LDGestureLockIndicator.m in Sources */,
-				13F6C57B1E49737B009F751A /* ViewController.m in Sources */,
-				130A4F0C1E55A5E20078993B /* LDGestureLockView.m in Sources */,
-				130A4F0D1E55A5E20078993B /* LDGestureLockViewController.m in Sources */,
-				13F6C5781E49737B009F751A /* AppDelegate.m in Sources */,
+				130A4F281E55A6EA0078993B /* LDGestureLockIndicator.m in Sources */,
+				130A4F291E55A6EA0078993B /* LDGestureLockView.m in Sources */,
 				13F6C5751E49737B009F751A /* main.m in Sources */,
+				130A4F2A1E55A6EA0078993B /* LDGestureLockViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
