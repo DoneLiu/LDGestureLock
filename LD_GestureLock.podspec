@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "GestureLock/*.{h,m}"
+  s.source_files  = "LDGestureLock/GestureLock/*.{h,m}"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -103,7 +103,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  s.resources = "GestureLock/*.png"
+  s.resources = "LDGestureLock/GestureLock/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
