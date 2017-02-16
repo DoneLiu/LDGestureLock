@@ -10,7 +10,7 @@
 
 #import "LDGestureLockViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <LDGestureLockViewControllerDelegate>
 
 @end
 
@@ -44,16 +44,30 @@
 
 - (void)create {
     LDGestureLockViewController *vc = [[LDGestureLockViewController alloc] initWithGestureLockType:LDGestureLockTypeCreatePassword];
+    vc.delegate = self;
     [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (void)validate {
     LDGestureLockViewController *vc = [[LDGestureLockViewController alloc] initWithGestureLockType:LDGestureLockTypeValidatePassword];
+    vc.delegate = self;
     [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (void)delete {
-    //
+    [LDGestureLockViewController deleteGestureLockPassword];
+}
+
+- (void)ld_gestureLockReLogin {
+    NSLog(@"ld_gestureLockReLogin");
+}
+
+- (void)ld_gestureLockForgetGesturePassword {
+    NSLog(@"ld_gestureLockForgetGesturePassword");
+}
+
+- (void)ld_gestureLockOtherAccountLogin {
+    NSLog(@"ld_gestureLockOtherAccountLogin");
 }
 
 - (void)didReceiveMemoryWarning {

@@ -68,8 +68,8 @@ static NSInteger BUTTON_TAG = 1000;
         
         [self.selectedBtns removeAllObjects];
         
-        if ([self.delegate respondsToSelector:@selector(getsureLockView:drawRectFinished:)]) {
-            [self.delegate getsureLockView:self drawRectFinished:gestureLockPassword];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(ld_getsureLockView:drawRectFinished:)]) {
+            [self.delegate ld_getsureLockView:self drawRectFinished:gestureLockPassword];
         }
     }
 }

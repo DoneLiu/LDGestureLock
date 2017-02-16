@@ -17,7 +17,7 @@
 
 @protocol LDGestureLockViewDelegate <NSObject>
 
-- (void)getsureLockView:(LDGestureLockView *)gestureLockView drawRectFinished:(NSMutableString *)gestureLockPassword;
+- (void)ld_getsureLockView:(LDGestureLockView *)gestureLockView drawRectFinished:(NSMutableString *)gestureLockPassword;
 
 @end
 

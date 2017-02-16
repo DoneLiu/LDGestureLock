@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>MMPlaceHolder.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Masonry.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,12 +17,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>13DC70B699B9164063B572EFE54132B2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>84DC0800182A567121A5D0BB965ACDEE</key>
+		<key>95FEE900DBC71C830C32C31C2FCF6507</key>
 		<dict>
 			<key>primary</key>
 			<true/>

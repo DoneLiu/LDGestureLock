@@ -243,7 +243,7 @@ static CGFloat GESTURE_LOCK_VIEW_SCALE;
 
 #pragma mark - LDGestureLockViewDelegate
 
-- (void)getsureLockView:(LDGestureLockView *)gestureLockView drawRectFinished:(NSMutableString *)gestureLockPassword {
+- (void)ld_getsureLockView:(LDGestureLockView *)gestureLockView drawRectFinished:(NSMutableString *)gestureLockPassword {
     switch (_gestureLockType) {
         case LDGestureLockTypeCreatePassword: {
             [self createGestureLockPassword:gestureLockPassword];
@@ -261,8 +261,19 @@ static CGFloat GESTURE_LOCK_VIEW_SCALE;
 
 #pragma mark - Publicb
 
-- (NSString *)gestureLockPassword {
++ (NSString *)gestureLockPassword {
     return [[NSUserDefaults standardUserDefaults] objectForKey:GESTURE_LOCK_PASSWORD];
+}
+
++ (void)deleteGestureLockPassword {
+    if ([LDGestureLockViewController gestureLockPassword]) {
+        NSLog(@"deleteGestureLockPassword success !");
+    
+        [[NSUserDefaults standardUserDefaults] removeObjectForKey:GESTURE_LOCK_PASSWORD];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    } else {
+        NSLog(@"no gesture password now !");
+    }
 }
 
 #pragma mark - Private
@@ -298,16 +309,13 @@ static CGFloat GESTURE_LOCK_VIEW_SCALE;
 - (void)validateGestureLockPassword:(NSMutableString *)gestureLockPassword {
     static NSInteger errorCount = 5;
     
-    if ([gestureLockPassword isEqualToString:[self gestureLockPassword]]) {
-        [self dismissViewControllerAnimated:YES completion:^{
-            errorCount = 5;
-        }];
+    if ([gestureLockPassword isEqualToString:[LDGestureLockViewController gestureLockPassword]]) {
+        [self dismissViewControllerAnimated:YES completion:nil];
     } else {
         if (errorCount - 1 == 0) {
             UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"手势密码已失效" message:@"请重新登陆" preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction *reLogin = [UIAlertAction actionWithTitle:@"重新登陆" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-                NSLog(@"重新登陆");
-                // do something
+                [self reLogin];
             }];
             [alert addAction:reLogin];
             [self presentViewController:alert animated:YES completion:nil];
@@ -343,14 +351,33 @@ static CGFloat GESTURE_LOCK_VIEW_SCALE;
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
+- (void)reLogin {
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(ld_gestureLockReLogin)]) {
+        [self.delegate ld_gestureLockReLogin];
+        [self dismissViewControllerAnimated:NO completion:nil];
+    }
+}
+
 #pragma mark - Button
 
 - (void)otherAccountLoginClick:(UIButton *)sender {
     NSLog(@"%@", NSStringFromSelector(_cmd));
+    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(ld_gestureLockOtherAccountLogin)]) {
+        [self.delegate ld_gestureLockOtherAccountLogin];
+        [self dismissViewControllerAnimated:NO completion:nil];
+    }
 }
 
 - (void)forgetGesturePasswordClick:(UIButton *)sender {
     NSLog(@"%@", NSStringFromSelector(_cmd));
+    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(ld_gestureLockForgetGesturePassword)]) {
+        [self.delegate ld_gestureLockForgetGesturePassword];
+        [self dismissViewControllerAnimated:NO completion:nil];
+    }
 }
 
 - (void)resetGesturePasswordClick:(UIButton *)sender {
@@ -360,6 +387,10 @@ static CGFloat GESTURE_LOCK_VIEW_SCALE;
     self.status.text = @"请绘制手势密码";
     self.resetGesturePassword.hidden = YES;
     [self.gestureLockIndicator setGestureLockPassword:nil];
+}
+
+- (void)dealloc {
+    NSLog(@"LDGestureLockViewController dealloc !");
 }
 
 - (void)didReceiveMemoryWarning {

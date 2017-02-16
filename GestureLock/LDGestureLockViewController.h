@@ -13,10 +13,29 @@ typedef NS_ENUM(NSInteger, LDGestureLockType) {
     LDGestureLockTypeValidatePassword   // 验证手势密码
 };
 
+@protocol LDGestureLockViewControllerDelegate <NSObject>
+
+// 其它账号登录操作
+- (void)ld_gestureLockOtherAccountLogin;
+
+// 忘记密码操作
+- (void)ld_gestureLockForgetGesturePassword;
+
+// 重新登录操作
+- (void)ld_gestureLockReLogin;
+
+@end
+
 @interface LDGestureLockViewController : UIViewController
 
-- (NSString *)gestureLockPassword;
+@property (nonatomic, assign) id<LDGestureLockViewControllerDelegate> delegate;
 
 - (instancetype)initWithGestureLockType:(LDGestureLockType)gestureLockType;
+
+// 用于判断是否设置了手势密码
++ (NSString *)gestureLockPassword;
+
+// 删除手势密码
++ (void)deleteGestureLockPassword;
 
 @end
